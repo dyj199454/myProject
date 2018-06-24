@@ -68,7 +68,7 @@
 							    		<span>/</span>
 							    	</li>
 							    	<li>
-							    		<a href="">签到有礼</a>
+							    		<span id="pre"></span><a href="">签到有礼</a>
 							    		<span>/</span>
 							    	</li>
 							    	<li>
@@ -76,7 +76,7 @@
 							    		<span>/</span>
 							    	</li>
 							    	<li class="sell">
-							    		<a href="">我的特卖<span id="tm"></span></a>
+							    		<a href="">我的特卖<span id="tm" ></span></a>
 							    		<span>/</span>
 							    	</li>
 							    	<li class="vip">
@@ -88,8 +88,12 @@
 							    		<span>/</span>
 							    	</li>
 							    	<li class="mp">
-							    		<a href=""><span class="glyphicon glyphicon-phone" aria-hidden="true" style="margin-right:5px;">	
-							    		</span>手机版</a><span>/</span>
+							    		<a href="">
+							    			<span class="glyphicon glyphicon-phone" aria-hidden="true" style="margin-right:5px;"></span>
+							    		手机版
+							    		<!--<img src="images/weixin.jpg" / style="position:absolute; width:322px;height:322px;">-->
+							    		</a>
+							    		<span>/</span>
 							    	</li>
 							    	<li class="gd">
 							    		<a href="">更多<span id="more"></span></a>
@@ -113,21 +117,131 @@
 						    		<p>商品收藏</p>
 						    		<p>我的足迹</p>
 						    	</div>
+						    	<div id="myVip">
+						    		<p>俱乐部首页</p>
+						    		<p>唯品币兑换</p>
+						    		<p>免费抽大奖</p>
+						    	</div>
+						    	<div id="mySv">
+						    		<p>联系客服</p>
+						    		<p>帮助中心</p>
+						    		<p>服务中心</p>
+						    	</div>
+						    	<div id="myMore">
+						    		<p class="hz">
+						    			<strong>合作专区</strong>
+						    			<ul>
+						    				<li>申请</li>
+						    				<li>唯品卡</li>
+						    				<li>支付</li>
+						    			</ul>
+						    		</p>
+						    		<p class="about">
+						    			<div><strong>关于我们</strong></div>
+						    			<ul>
+						    				<li>sell on vip</li>
+						    				<li>品牌招商</li>
+						    				<li>官方博客</li>
+						    			</ul>
+						    		</p>
+						    	</div>
 							</div>    
 					    </div>	
 					</div>   
 				</nav>
-				<div class="top-logo">
-					
+				<div id="top_logo_wrap">
+					<div id="top_logo">
+						<a href="index.html"><img class="img1" src="images/wplogo.png" /></a>
+						<div id="logo_server">
+							<a class="zp" href="#"></a>
+							<a class="mt" href="#"></a>
+							<a class="mf" href="#"></a>
+						</div>
+						<div id="search">
+							<input type="text" id="txt" placeholder="大家都在搜：连衣裙"/>
+							<a id="i_search" href="#"><span class="i_cion"></span></a>
+						</div>
+						<div id="shop">
+							<span class="icn_bag"></span>
+							<span id="cartTxt">购物袋</span>
+							<span id="cartCount"><span id="count" style="color:#fff;" >0</span></span>
+							<div class="shop_btn"><a href="#" style="color:#f00581;">马上登录</a>查看购物袋</div>
+						</div>
+					</div>
 				</div>
-				<nav class="main-nav">
-					
+				<nav id="main_nav_wrap">
+					<div id="main_nav">
+						<ul id="main_nav_list">
+							<li style="background:#bd1067;"><a href="#">首页</a></li>
+							<li><a href="#" style="text-indent: 25px;"><img src="images/zf.gif" />超级预付</a></li>
+							<li><a href="#">女装</a></li>
+							<li><a href="#">母婴</a></li>
+							<li><a href="#">美妆</a></li>
+							<li><a href="#">国际</a></li>
+							<li><a href="#">男装</a></li>
+							<li><a href="#">居家</a></li>
+							<li><a href="#">鞋包</a></li>
+							<li><a href="#">运动</a></li>
+							<li>
+								<a href="#">更多<span id="main_nav_tri"></span></a>
+								<div id="channel_group">
+									<div class="channel_item">
+										<a href="#"><img src="images/pic1.jpg" /></a>
+										<div class="channel_shadow"></div>
+										<p class="brand_name"></p>
+									</div>
+									<div class="channel_item">
+										<a href="#" style="margin:0 10px;" ><img src="images/pic2.jpg" /></a>
+										<div class="channel_shadow"></div>
+										<p class="brand_name"></p>
+									</div>
+									<div class="channel_item">
+										<a href="#" ><img src="images/pic3.jpg" /></a>
+										<div class="channel_shadow"></div>
+										<p class="brand_name"></p>
+									</div>
+									<div class="channel_item">
+										<a href="#" style="margin-top:5px;"><img src="images/pic4.jpg" /></a>
+										<div class="channel_shadow"></div>
+										<p class="brand_name"></p>
+									</div>
+									<div class="channel_item">
+										<a href="#" style="margin-top:5px;margin-left:10px;"><img src="images/pic5.png" /></a>
+										<div class="channel_shadow"></div>
+										<p class="brand_name"></p>
+									</div>
+								</div>
+							</li>
+							<li style="margin-left:110px;"><a href="#" style="text-indent: 25px;"><img id="fl" src="images/flogo.png"/>分类</a></li>
+							<li><a href="#" style="text-indent: 25px;"><img id="comment" src="images/comlogo.png"/>预告</a></li>
+						</ul>
+					</div>
 				</nav>
 			</div>
 		<!----------------banner------------------------>
 		<div id="banner-wrap">
-			<div class="banner">
-				
+			<div class="banner" style="position: relative;">
+				<div id="" style="position: absolute;">
+					<li><img src="images/banner1.jpg"></li>
+				</div>
+				<!--<div class="banner_pic">
+					<ul>
+						
+						<li><img src="images/banner2.jpg"></li>
+						<li><img src="images/banner3.jpg"></li>
+						<li><img src="images/banner4.jpg"></li>
+						<li><img src="images/banner5.jpg"></li>
+					</ul>
+				</div>
+				<div class="banner_select">
+					<ul>
+						<li>宝洁集团VIP大牌日 满199减100</li>
+						<li>反季清仓指南 最低一件5折</li>
+						<li>超级预付 全场免邮</li>
+						<li>冰爽节来袭 激情开抢</li>
+						<li>6.26夏凉节 满199减100</li>
+					</ul>
+				</div>-->
 			</div>	
 		</div>
 		<!-------------------------主要内容区---------------------->

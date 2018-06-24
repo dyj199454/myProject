@@ -1,5 +1,5 @@
 @charset "UTF-8";
-body, ul, li, dl, dt, dd, p, ol, h1, h2, h3, h4, h5, h6, form, img, table, fieldset, legend {
+body, ul, li, dl, dt, dd, p, ol, h1, h2, h3, h4, h5, h6, form, img, table, fieldset, legend, a {
   margin: 0;
   padding: 0; }
 
@@ -27,14 +27,12 @@ input, a {
 
 #header {
   width: 100%;
-  height: 128px;
-  background: red; }
+  height: 168px; }
   #header .nav-top {
-    background: #777; }
+    background: #f5f5f5; }
     #header .nav-top .nav-top-inner {
       width: 1000px;
       height: 28px;
-      background: green;
       margin: 0 auto;
       position: relative; }
       #header .nav-top .nav-top-inner .nav-top-title {
@@ -96,19 +94,30 @@ input, a {
     #header .nav-top .nav-top-list {
       margin-left: 160px;
       margin-top: 5px;
-      background: red;
       float: left;
       position: relative; }
       #header .nav-top .nav-top-list ul li {
         float: left; }
+        #header .nav-top .nav-top-list ul li:hover a {
+          color: deeppink; }
+          #header .nav-top .nav-top-list ul li:hover a #tm, #header .nav-top .nav-top-list ul li:hover a #hy, #header .nav-top .nav-top-list ul li:hover a #kh, #header .nav-top .nav-top-list ul li:hover a #more {
+            position: absolute;
+            right: 3px;
+            margin-top: 4px;
+            float: left;
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-width: 4px;
+            border-color: transparent transparent deeppink transparent;
+            border-style: dashed dashed solid dashed; }
         #header .nav-top .nav-top-list ul li a {
           position: relative;
           text-decoration: none;
           font-size: 12px;
+          text-align: center;
           color: #666;
           padding: 0 16px; }
-          #header .nav-top .nav-top-list ul li a:hover {
-            color: deeppink; }
           #header .nav-top .nav-top-list ul li a #tm, #header .nav-top .nav-top-list ul li a #hy, #header .nav-top .nav-top-list ul li a #kh, #header .nav-top .nav-top-list ul li a #more {
             position: absolute;
             right: 3px;
@@ -120,15 +129,23 @@ input, a {
             border-width: 4px;
             border-color: #999 transparent transparent transparent;
             border-style: solid dashed dashed dashed; }
+        #header .nav-top .nav-top-list ul li #pre {
+          position: absolute;
+          display: inline-block;
+          height: 18px;
+          width: 15px;
+          background: url(../images/logo.png) no-repeat left center;
+          background-position: 0px -240px; }
         #header .nav-top .nav-top-list ul li span {
-          color: #eee; }
+          color: #777; }
       #header .nav-top .nav-top-list .nav-login {
         position: absolute;
         top: 20px;
         width: 200px;
         height: 140px;
         border: 1px solid #eee;
-        display: none; }
+        display: none;
+        background: #fff; }
         #header .nav-top .nav-top-list .nav-login a {
           text-decoration: none;
           color: #666; }
@@ -146,10 +163,223 @@ input, a {
         width: 80px;
         height: 100px;
         display: none;
-        border: 1px solid #eee; }
+        border: 1px solid #eee;
+        background: #fff; }
         #header .nav-top .nav-top-list #mySell p {
           color: #666;
+          font-size: 14px;
+          text-align: center; }
+      #header .nav-top .nav-top-list #myVip {
+        position: absolute;
+        left: 405px;
+        top: 20px;
+        width: 92px;
+        height: 100px;
+        display: none;
+        border: 1px solid #eee;
+        background: #fff; }
+        #header .nav-top .nav-top-list #myVip p {
+          color: #666;
+          font-size: 14px;
+          text-align: center; }
+      #header .nav-top .nav-top-list #mySv {
+        position: absolute;
+        left: 505px;
+        top: 20px;
+        width: 80px;
+        height: 100px;
+        display: none;
+        border: 1px solid #eee;
+        background: #fff; }
+        #header .nav-top .nav-top-list #mySv p {
+          color: #666;
+          font-size: 14px;
+          text-align: center; }
+      #header .nav-top .nav-top-list #myMore {
+        position: absolute;
+        left: 540px;
+        top: 20px;
+        width: 200px;
+        height: 120px;
+        display: none;
+        border: 1px solid #eee;
+        background: #fff; }
+        #header .nav-top .nav-top-list #myMore #hz ul > li {
+          font-size: 14px;
+          color: #666;
+          margin-right: 5px; }
+  #header #top_logo_wrap {
+    background: #fff; }
+    #header #top_logo_wrap #top_logo {
+      height: 100px;
+      width: 1000px;
+      margin: 0 auto;
+      display: flex; }
+      #header #top_logo_wrap #top_logo .img1 {
+        width: 160px;
+        height: 100px; }
+      #header #top_logo_wrap #top_logo #logo_server {
+        width: 304px; }
+        #header #top_logo_wrap #top_logo #logo_server .zp, #header #top_logo_wrap #top_logo #logo_server .mf, #header #top_logo_wrap #top_logo #logo_server .mt {
+          display: block;
+          height: 100px;
+          width: 101px;
+          float: left; }
+        #header #top_logo_wrap #top_logo #logo_server .zp {
+          background: url(../images/logo.png) no-repeat left top;
+          background-position: -4px 5px; }
+        #header #top_logo_wrap #top_logo #logo_server .mt {
+          background: url(../images/logo.png) no-repeat left top;
+          background-position: -104px 5px; }
+        #header #top_logo_wrap #top_logo #logo_server .mf {
+          background: url(../images/logo.png) no-repeat left top;
+          background-position: -208px 5px; }
+      #header #top_logo_wrap #top_logo #search {
+        margin-top: 35px;
+        margin-left: 38px;
+        width: 338px;
+        height: 34px;
+        border: 1px solid #333;
+        border-radius: 5px; }
+        #header #top_logo_wrap #top_logo #search #txt {
+          margin-left: 10px;
+          border: none;
+          width: 291px;
+          height: 32px; }
+        #header #top_logo_wrap #top_logo #search #i_search {
+          width: 47px;
+          height: 32px; }
+          #header #top_logo_wrap #top_logo #search #i_search .i_cion {
+            display: inline-block;
+            margin-left: 5px;
+            width: 17px;
+            height: 17px;
+            background: url(../images/logo.png) no-repeat left top;
+            background-position: -72px -208px; }
+      #header #top_logo_wrap #top_logo #shop {
+        width: 106px;
+        height: 32px;
+        line-height: 32px;
+        margin-left: 20px;
+        margin-top: 35px;
+        background: #f7f7f7;
+        border: 1px solid #ddd;
+        padding-left: 10px;
+        border-radius: 3px; }
+        #header #top_logo_wrap #top_logo #shop:hover {
+          border-bottom: none;
+          background: #fff; }
+          #header #top_logo_wrap #top_logo #shop:hover .shop_btn {
+            display: block; }
+        #header #top_logo_wrap #top_logo #shop .icn_bag {
+          display: inline-block;
+          width: 12px;
+          height: 17px;
+          background: url(../images/logo.png) no-repeat left top;
+          background-position: -93px -208px; }
+        #header #top_logo_wrap #top_logo #shop #cartTxt {
+          color: #333;
           font-size: 14px; }
+        #header #top_logo_wrap #top_logo #shop #cartCount {
+          position: relative;
+          display: inline-block;
+          width: 24px;
+          height: 16px;
+          background: #f00581;
+          border-radius: 8px;
+          text-align: center; }
+          #header #top_logo_wrap #top_logo #shop #cartCount #count {
+            position: absolute;
+            top: -8px;
+            left: 8px;
+            font-style: normal; }
+        #header #top_logo_wrap #top_logo #shop .shop_btn {
+          background: #fff;
+          width: 150px;
+          height: 50px;
+          text-align: center;
+          font-size: 14px;
+          line-height: 50px;
+          position: absolute;
+          border: 1px solid #f7f7f7;
+          display: none; }
+  #header #main_nav_wrap {
+    background: #f00581; }
+    #header #main_nav_wrap #main_nav {
+      height: 40px;
+      width: 1000px;
+      margin: 0 auto;
+      overflow: hidden; }
+      #header #main_nav_wrap #main_nav #main_nav_list {
+        height: 40px; }
+        #header #main_nav_wrap #main_nav #main_nav_list li {
+          float: left; }
+          #header #main_nav_wrap #main_nav #main_nav_list li:hover {
+            background: #FF6EC7; }
+            #header #main_nav_wrap #main_nav #main_nav_list li:hover #channel_group {
+              display: block; }
+            #header #main_nav_wrap #main_nav #main_nav_list li:hover #main_nav_tri {
+              position: absolute;
+              right: 3px;
+              top: 17px;
+              display: inline-block;
+              width: 0;
+              height: 0;
+              border-width: 4px;
+              border-color: transparent transparent #fff transparent;
+              border-style: dashed dashed solid dashed; }
+          #header #main_nav_wrap #main_nav #main_nav_list li a {
+            position: relative;
+            display: block;
+            font-weight: 700;
+            color: #fff;
+            height: 40px;
+            font-size: 16px;
+            padding: 0 14px;
+            text-align: center;
+            line-height: 40px;
+            text-decoration: none; }
+            #header #main_nav_wrap #main_nav #main_nav_list li a #main_nav_tri {
+              position: absolute;
+              right: 3px;
+              top: 17px;
+              display: inline-block;
+              width: 0;
+              height: 0;
+              border-width: 4px;
+              border-color: #fff transparent transparent transparent;
+              border-style: solid dashed dashed dashed; }
+            #header #main_nav_wrap #main_nav #main_nav_list li a img, #header #main_nav_wrap #main_nav #main_nav_list li a #fl, #header #main_nav_wrap #main_nav #main_nav_list li a #comment {
+              display: block;
+              position: absolute;
+              width: 20px;
+              height: 32px;
+              top: 4px; }
+          #header #main_nav_wrap #main_nav #main_nav_list li #channel_group {
+            width: 558px;
+            max-height: 335px;
+            padding: 16px 10px 11px 16px;
+            background: #fff;
+            position: absolute;
+            right: 415px;
+            display: none; }
+            #header #main_nav_wrap #main_nav #main_nav_list li #channel_group .channel_item {
+              float: left;
+              box-sizing: border-box; }
+              #header #main_nav_wrap #main_nav #main_nav_list li #channel_group .channel_item a {
+                padding: 0;
+                width: 170px;
+                height: 96px; }
+                #header #main_nav_wrap #main_nav #main_nav_list li #channel_group .channel_item a img {
+                  top: 0;
+                  width: 170px;
+                  height: 96px;
+                  border-radius: 5px; }
+              #header #main_nav_wrap #main_nav #main_nav_list li #channel_group .channel_item .brand_name {
+                position: absolute; }
+
+#banner-wrap {
+  background: url(../images/banner4.jpg) no-repeat top/cover; }
 
 .banner {
   width: 1000px;
