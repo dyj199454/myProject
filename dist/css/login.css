@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+input {
+  border: none; }
+
+#header_wrap .header {
+  height: 100px;
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; }
+  #header_wrap .header .h_title img {
+    width: 125px;
+    height: 100px; }
+  #header_wrap .header .h_server img {
+    width: 296px;
+    height: 100px; }
+
+#main_wrap .main {
+  width: 1246px;
+  height: 650px;
+  background: url(../images/main_bg.jpg) no-repeat top/cover;
+  position: relative; }
+  #main_wrap .main .log_input {
+    width: 360px;
+    height: 435px;
+    background: #fff;
+    position: absolute;
+    top: 15px;
+    right: 100px; }
+    #main_wrap .main .log_input .log_user {
+      height: 50px;
+      border-bottom: 1px solid #999999;
+      color: #f10180;
+      text-align: center;
+      line-height: 50px;
+      font-size: 18px;
+      font-weight: 700; }
+    #main_wrap .main .log_input .log_form {
+      height: 279px; }
+      #main_wrap .main .log_input .log_form #user {
+        background: #fff;
+        margin: 0 30px;
+        width: 300px;
+        height: 46px;
+        border: 1px solid #b2b2b2;
+        margin-top: 30px;
+        border-radius: 3px;
+        display: flex; }
+        #main_wrap .main .log_input .log_form #user input {
+          width: 284px;
+          height: 46px;
+          margin-left: 16px; }
+        #main_wrap .main .log_input .log_form #user span {
+          display: block;
+          width: 20px;
+          height: 20px; }
+      #main_wrap .main .log_input .log_form #psw {
+        background: #fff;
+        margin: 0 30px;
+        width: 300px;
+        height: 46px;
+        border: 1px solid #b2b2b2;
+        margin-top: 19px;
+        border-radius: 3px;
+        display: flex; }
+        #main_wrap .main .log_input .log_form #psw input {
+          width: 284px;
+          height: 46px;
+          margin-left: 16px; }
+        #main_wrap .main .log_input .log_form #psw span {
+          display: block;
+          height: 20px;
+          width: 20px; }
+      #main_wrap .main .log_input .log_form .log_label {
+        height: 19px;
+        width: 300px;
+        margin: 19px 30px;
+        font-size: 12px; }
+        #main_wrap .main .log_input .log_form .log_label #check {
+          width: 16px;
+          height: 19px; }
+        #main_wrap .main .log_input .log_form .log_label a {
+          color: #333;
+          text-decoration: none; }
+          #main_wrap .main .log_input .log_form .log_label a:hover {
+            color: #f10180; }
+        #main_wrap .main .log_input .log_form .log_label label {
+          color: #333;
+          margin-right: 142px; }
+      #main_wrap .main .log_input .log_form #btn {
+        width: 300px;
+        height: 46px;
+        margin: 0 30px;
+        margin-top: 20px;
+        border-radius: 3px;
+        border: 1px solid #f10180;
+        background: #f10180;
+        font-size: 18px;
+        color: #fff; }
+      #main_wrap .main .log_input .log_form .login_logo {
+        width: 300px;
+        height: 65px;
+        background: green;
+        border-top: 1px solid #999999;
+        margin: 0 30px;
+        margin-top: 49px; }
+        #main_wrap .main .log_input .log_form .login_logo div {
+          width: 300px;
+          height: 24px;
+          background: blue;
+          margin: 20px 0; }
+
+#footer_wrap .footer {
+  width: 1000px;
+  height: 78px;
+  margin: 0 auto; }
+  #footer_wrap .footer p {
+    line-height: 78px;
+    text-align: center;
+    font-size: 14px;
+    color: #666666;
+    font-weight: 100; }

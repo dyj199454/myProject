@@ -5,6 +5,7 @@
 		<title></title>
 		<script src="js/jquery-1.11.0.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" href="css/index.css" />
 		<script src="js/index.js"></script>
 		
 		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -220,35 +221,111 @@
 			</div>
 		<!----------------banner------------------------>
 		<div id="banner-wrap">
-			<div class="banner" style="position: relative;">
-				<div id="" style="position: absolute;">
-					<li><img src="images/banner1.jpg"></li>
-				</div>
-				<!--<div class="banner_pic">
+			<div class="banner">
+				<div class="banner_pic">
 					<ul>
-						
-						<li><img src="images/banner2.jpg"></li>
-						<li><img src="images/banner3.jpg"></li>
-						<li><img src="images/banner4.jpg"></li>
-						<li><img src="images/banner5.jpg"></li>
+						<li style="background: url(images/banner1.jpg);"></li>
+						<li style="background: url(images/banner2.jpg);"></li>
+						<li style="background: url(images/banner3.jpg);"></li>
+						<li style="background: url(images/banner4.jpg);"></li>
+						<li style="background: url(images/banner5.jpg);"></li>
 					</ul>
 				</div>
-				<div class="banner_select">
+				<div class="nav">
 					<ul>
-						<li>宝洁集团VIP大牌日 满199减100</li>
+						<li class="select">宝洁集团VIP大牌日 满199减100</li>
 						<li>反季清仓指南 最低一件5折</li>
 						<li>超级预付 全场免邮</li>
 						<li>冰爽节来袭 激情开抢</li>
 						<li>6.26夏凉节 满199减100</li>
 					</ul>
-				</div>-->
+				</div>
 			</div>	
 		</div>
 		<!-------------------------主要内容区---------------------->
 		<div id="main-wrap">
-			<div class="main">
-				
-			</div>		
+			<div class="main_h">
+				<div class="main_title"><strong>新人优选</strong>好货专区</div>
+				<div class="main_title_list">
+					<div class="main_title_nav">
+						<div class="main_title_nav_left">
+							<span class="clock glyphicon glyphicon-time"></span>
+							今日秒杀
+						</div>
+						<ul class="main_title_nav_right">
+							<li class="list1"><span>护肤</span></li>
+							<li class="list1"><span>男装</span></li>
+							<li class="list1"><span>女装</span></li>
+							<li class="list1"><span>母婴</span></li>
+							<li class="list1"><span>箱包</span></li>
+							<li class="list1"><span>内衣</span></li>
+							<li class="list1"><span>零食</span></li>
+							<li class="list1"><span>家电</span></li>
+							<li class="list1" style="border-right:none;"><span>家用</span></li>
+						</ul>
+					</div>
+					<div class="shop_list">
+						<div class="shop_list_left">
+							<img class="img2" src="images/pic2.jpg"/>
+						</div>
+						<div class="shop_list_right">
+							<li class="list2"><a href=""></a></li>
+							<li class="list2"><a href=""></a></li>
+							<li class="list2"><a href=""></a></li>
+							<li class="list2"><a href=""></a></li>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="today"><img src="images/today.png"  /></div>
+			<!--第二部分--楼梯-->
+			<div id="floorNav">
+				<ul>
+					<li>1F<span>精选</span></li>
+					<li>2F<span>女装</span></li>
+					<li>3F<span>鞋包</span></li>
+					<li>4F<span>男装</span></li>
+					<li>5F<span>运动</span></li>
+					<li>6F<span>饰品</span></li>
+					<li>7F<span>美妆</span></li>
+					<li>8F<span>母婴</span></li>
+					<li>9F<span>居家</span></li>
+					<li>10F<span>国际</span></li>
+					<li>11F<span>生活</span></li>
+					<li>12F<span>预告</span></li>
+				</ul>
+			</div>
+			<div id="content">
+				<ul>
+					<li style="background: #8B0000;">
+						<div class="content_jx">
+							<div>
+								<a href=""><img class="jx_pic" src="images/jxpic1.jpg"/></a>
+								<img class="jx_txt"src="images/zhuanshu-text.png"/>
+							</div>
+							<div >
+								<a href=""><img class="jx_pic" style="margin:0 20px;" src="images/jxpic1.jpg"/></a>
+								<img class="jx_txt"style="left:40px;"src="images/zhuanshu-text.png"/>
+							</div>
+							<div >
+								<a href=""><img class="jx_pic" src="images/jxpic1.jpg"/></a>
+								<img class="jx_txt"src="images/zhuanshu-text.png"/>
+							</div>
+						</div>
+					</li>
+					<li style="background: #123;">女装</li>
+					<li style="background: #667;">鞋包</li>
+					<li style="background: #558;">男装</li>
+					<li style="background: #900;">运动</li>
+					<li style="background: #456;">饰品</li>
+					<li style="background: #789;">美妆</li>
+					<li style="background: #234;">母婴</li>
+					<li style="background: #567;">居家</li>
+					<li style="background: #887;">国际</li>
+					<li style="background: #980;">生活</li>
+					<li style="background: red;">预告</li>
+				</ul>
+			</div>
 		</div>
 		<!------------------------------尾部----------------------->
 		<div id="footer-wrap">
