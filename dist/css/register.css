@@ -1,0 +1,122 @@
+@charset "UTF-8";
+body, ul, li, dl, dt, dd, p, ol, h1, h2, h3, h4, h5, h6, form, img, table, fieldset, legend, a {
+  margin: 0;
+  padding: 0; }
+
+ul, li, ol {
+  list-style: none; }
+
+img, fieldset {
+  border: 0; }
+
+img {
+  display: block; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100; }
+
+body {
+  font-family: "微软雅黑"; }
+
+input, a {
+  outline: none; }
+
+#header_wrap .header {
+  height: 100px;
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; }
+  #header_wrap .header .h_title img {
+    width: 125px;
+    height: 100px; }
+  #header_wrap .header .h_server img {
+    width: 296px;
+    height: 100px; }
+
+#main_wrap .main {
+  width: 1246px;
+  height: 650px;
+  background: url(../images/main_bg.jpg) no-repeat top/cover;
+  position: relative; }
+  #main_wrap .main .reg_input {
+    width: 360px;
+    height: 380px;
+    background: #fff;
+    position: absolute;
+    top: 30px;
+    right: 100px; }
+    #main_wrap .main .reg_input .reg_user {
+      height: 50px;
+      border-bottom: 1px solid #CECECE;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 30px; }
+      #main_wrap .main .reg_input .reg_user h3 {
+        height: 50px;
+        font-size: 18px;
+        color: #666;
+        line-height: 50px;
+        font-weight: 700; }
+      #main_wrap .main .reg_input .reg_user div {
+        width: 112px;
+        font-size: 14px;
+        color: #666;
+        height: 50px;
+        line-height: 50px; }
+        #main_wrap .main .reg_input .reg_user div a {
+          color: #f10180; }
+    #main_wrap .main .reg_input .reg_form_wrap {
+      width: 360px;
+      height: 380px;
+      padding: 0 30px;
+      background: #fff; }
+      #main_wrap .main .reg_input .reg_form_wrap .reg_form {
+        width: 300px;
+        height: 380px; }
+        #main_wrap .main .reg_input .reg_form_wrap .reg_form #user, #main_wrap .main .reg_input .reg_form_wrap .reg_form #psw, #main_wrap .main .reg_input .reg_form_wrap .reg_form #psw2 {
+          background: #fff;
+          width: 300px;
+          height: 46px;
+          border: 1px solid #b2b2b2;
+          display: flex;
+          margin-top: 30px; }
+          #main_wrap .main .reg_input .reg_form_wrap .reg_form #user input, #main_wrap .main .reg_input .reg_form_wrap .reg_form #psw input, #main_wrap .main .reg_input .reg_form_wrap .reg_form #psw2 input {
+            width: 260px;
+            height: 32px;
+            line-height: 32px;
+            margin-left: 15px;
+            margin-top: 5px;
+            border: none; }
+          #main_wrap .main .reg_input .reg_form_wrap .reg_form #user span, #main_wrap .main .reg_input .reg_form_wrap .reg_form #psw span, #main_wrap .main .reg_input .reg_form_wrap .reg_form #psw2 span {
+            margin-top: 13px;
+            margin-left: 10px;
+            display: block;
+            font-size: 20px;
+            width: 20px;
+            height: 20px;
+            color: #999999; }
+        #main_wrap .main .reg_input .reg_form_wrap .reg_form #btn {
+          width: 300px;
+          height: 46px;
+          margin-top: 40px;
+          border-radius: 3px;
+          border: 1px solid #f10180;
+          background: #f10180;
+          font-size: 18px;
+          color: #fff; }
+
+#footer_wrap .footer {
+  width: 1000px;
+  height: 78px;
+  margin: 0 auto; }
+  #footer_wrap .footer p {
+    line-height: 78px;
+    text-align: center;
+    font-size: 14px;
+    color: #666666;
+    font-weight: 100; }

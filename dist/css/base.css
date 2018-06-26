@@ -382,7 +382,33 @@ input, a {
   background: #fcfcfc; }
 
 .footer {
-  width: 1000px;
-  height: 477px;
+  margin-top: 50px;
+  width: 960px;
+  height: 428px;
   background: blue;
   margin: 0 auto; }
+  .footer .footer_vip {
+    width: 960px;
+    height: 105px;
+    background: yellowgreen; }
+    .footer .footer_vip img {
+      margin-left: 90px;
+      padding-top: 25px; }
+  .footer .footer_l {
+    width: 960px;
+    height: 146px;
+    background: red;
+    margin: 30px 0 20px; }
+  .footer .footer_infor {
+    width: 960px;
+    height: 101px;
+    background: red; }
+
+.footer_p {
+  background: red;
+  height: 48px; }
+  .footer_p .footer_pic {
+    width: 960px;
+    height: 40px;
+    background: green;
+    margin: 0 auto; }

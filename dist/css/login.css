@@ -47,16 +47,21 @@ input {
         height: 46px;
         border: 1px solid #b2b2b2;
         margin-top: 30px;
-        border-radius: 3px;
         display: flex; }
         #main_wrap .main .log_input .log_form #user input {
-          width: 284px;
-          height: 46px;
-          margin-left: 16px; }
+          width: 260px;
+          height: 32px;
+          line-height: 32px;
+          margin-left: 15px;
+          margin-top: 5px; }
         #main_wrap .main .log_input .log_form #user span {
+          margin-top: 13px;
+          margin-left: 10px;
           display: block;
           width: 20px;
-          height: 20px; }
+          height: 20px;
+          font-size: 20px;
+          color: #999999; }
       #main_wrap .main .log_input .log_form #psw {
         background: #fff;
         margin: 0 30px;
@@ -67,13 +72,20 @@ input {
         border-radius: 3px;
         display: flex; }
         #main_wrap .main .log_input .log_form #psw input {
-          width: 284px;
-          height: 46px;
-          margin-left: 16px; }
+          width: 260px;
+          height: 32px;
+          line-height: 32px;
+          margin-left: 15px;
+          margin-top: 5px; }
         #main_wrap .main .log_input .log_form #psw span {
           display: block;
           height: 20px;
-          width: 20px; }
+          width: 20px;
+          font-size: 20px;
+          margin-top: 13px;
+          margin-left: 10px;
+          font-size: 16px;
+          color: #999999; }
       #main_wrap .main .log_input .log_form .log_label {
         height: 19px;
         width: 300px;
@@ -89,7 +101,8 @@ input {
             color: #f10180; }
         #main_wrap .main .log_input .log_form .log_label label {
           color: #333;
-          margin-right: 142px; }
+          margin-right: 148px;
+          font-weight: 100; }
       #main_wrap .main .log_input .log_form #btn {
         width: 300px;
         height: 46px;
@@ -103,15 +116,46 @@ input {
       #main_wrap .main .log_input .log_form .login_logo {
         width: 300px;
         height: 65px;
-        background: green;
         border-top: 1px solid #999999;
         margin: 0 30px;
         margin-top: 49px; }
         #main_wrap .main .log_input .log_form .login_logo div {
           width: 300px;
           height: 24px;
-          background: blue;
-          margin: 20px 0; }
+          margin: 20px 0;
+          display: flex; }
+          #main_wrap .main .log_input .log_form .login_logo div a {
+            display: block;
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            text-decoration: none;
+            opacity: .7; }
+            #main_wrap .main .log_input .log_form .login_logo div a:hover {
+              opacity: 1; }
+          #main_wrap .main .log_input .log_form .login_logo div a:nth-of-type(5) {
+            width: 45px;
+            font-size: 12px;
+            color: #333;
+            text-align: center;
+            line-height: 24px;
+            opacity: 1; }
+            #main_wrap .main .log_input .log_form .login_logo div a:nth-of-type(5) span {
+              font-size: 12px;
+              font-weight: 100; }
+            #main_wrap .main .log_input .log_form .login_logo div a:nth-of-type(5):hover {
+              color: #f10180; }
+          #main_wrap .main .log_input .log_form .login_logo div a:nth-of-type(6) {
+            width: 56px;
+            opacity: 1;
+            font-size: 12px;
+            color: #333;
+            text-align: center;
+            line-height: 24px;
+            margin-right: 0;
+            margin-left: 52px; }
+            #main_wrap .main .log_input .log_form .login_logo div a:nth-of-type(6):hover {
+              color: #f10180; }
 
 #footer_wrap .footer {
   width: 1000px;
