@@ -47,7 +47,8 @@ input, a {
           text-align: center;
           color: #666;
           margin-left: 10px;
-          float: left; }
+          float: left;
+          z-index: 999999; }
         #header .nav-top .nav-top-inner .nav-top-title .tri {
           margin-top: 12px;
           float: left;
@@ -92,7 +93,7 @@ input, a {
                 color: deeppink;
                 border: 1px solid deeppink; }
     #header .nav-top .nav-top-list {
-      margin-left: 160px;
+      margin-left: 90px;
       margin-top: 5px;
       float: left;
       position: relative; }
@@ -362,7 +363,8 @@ input, a {
             background: #fff;
             position: absolute;
             right: 415px;
-            display: none; }
+            display: none;
+            z-index: 999999; }
             #header #main_nav_wrap #main_nav #main_nav_list li #channel_group .channel_item {
               float: left;
               box-sizing: border-box; }
@@ -385,24 +387,67 @@ input, a {
   margin-top: 50px;
   width: 960px;
   height: 428px;
-  background: blue;
   margin: 0 auto; }
   .footer .footer_vip {
     width: 960px;
-    height: 105px;
-    background: yellowgreen; }
+    height: 105px; }
     .footer .footer_vip img {
       margin-left: 90px;
       padding-top: 25px; }
   .footer .footer_l {
     width: 960px;
     height: 146px;
-    background: red;
     margin: 30px 0 20px; }
+    .footer .footer_l ul {
+      width: 150px;
+      height: 146px;
+      float: left;
+      margin-left: 10px; }
+      .footer .footer_l ul .strong {
+        font-size: 14px;
+        color: #333333; }
+      .footer .footer_l ul li {
+        border-right: 1px solid #B2B2B2; }
+        .footer .footer_l ul li a {
+          font-size: 14px;
+          color: #999999; }
+          .footer .footer_l ul li a:hover {
+            color: #F00581; }
+    .footer .footer_l .wx {
+      margin-left: 10px;
+      float: left; }
+      .footer .footer_l .wx img {
+        width: 100px;
+        height: 100px; }
+      .footer .footer_l .wx span {
+        font-size: 14px;
+        color: #777777; }
   .footer .footer_infor {
     width: 960px;
-    height: 101px;
-    background: red; }
+    height: 101px; }
+    .footer .footer_infor p:nth-of-type(1) {
+      width: 960px;
+      height: 30px;
+      background: #F00581;
+      color: #fff;
+      font-size: 14px;
+      line-height: 30px;
+      text-align: center; }
+      .footer .footer_infor p:nth-of-type(1) a {
+        color: #fff;
+        text-decoration: none; }
+    .footer .footer_infor p:nth-of-type(2) {
+      width: 960px;
+      height: 57px;
+      color: #B2B2B2;
+      font-size: 12px;
+      text-align: center;
+      margin-top: 20px; }
+      .footer .footer_infor p:nth-of-type(2) a {
+        color: #B2B2B2;
+        text-decoration: none; }
+        .footer .footer_infor p:nth-of-type(2) a:hover {
+          color: #F00581; }
 
 .footer_p {
   background: red;
