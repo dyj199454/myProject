@@ -99,6 +99,21 @@
 					})
 				});
 				
+				/*获取商品分类*/
+				$.get("http://datainfo.duapp.com/shopdata/getclass.php",function(data){
+						data = JSON.parse(data);
+						//console.log(data);
+						var str = "";
+						$.each(data,function(index,item){
+							str += `<li><a href="html/shoplist.html?classID=${item.classID}">${item.className}</a></li>`;
+						})
+						$("#main_nav_list").html(str);
+						$(".main_title_nav_right").html(str);
+					})
+				
+			/*获取商品的列表*/
+			
+			
 			})
    
    

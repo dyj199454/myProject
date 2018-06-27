@@ -11,6 +11,10 @@
 				  }else if(data==2){
 				  	alert("用户密码不符合");
 				  }else{
+				  	data = JSON.parse(data)
+				  	console.log(data)
+				  	$.cookie("username",data.userID,{expires:7,path:"/"});
+				  	console.log("aaaa");
 				  	window.location.href="../index.html";
 				  }
 			})

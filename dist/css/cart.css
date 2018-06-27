@@ -1,0 +1,122 @@
+@charset "UTF-8";
+body, ul, li, dl, dt, dd, p, ol, h1, h2, h3, h4, h5, h6, form, img, table, fieldset, legend, a {
+  margin: 0;
+  padding: 0; }
+
+ul, li, ol {
+  list-style: none; }
+
+img, fieldset {
+  border: 0; }
+
+img {
+  display: block; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100; }
+
+body {
+  font-family: "微软雅黑"; }
+
+input, a {
+  outline: none; }
+
+.main1 {
+  width: 960px;
+  margin: 0 auto; }
+  .main1 #cart_title {
+    margin: 20px 0 0;
+    width: 960px;
+    height: 38px;
+    line-height: 38px;
+    background: #F9F9F9;
+    border: 1px solid #e0e0e0; }
+    .main1 #cart_title #cart_sub_title {
+      width: 960px;
+      height: 38px; }
+      .main1 #cart_title #cart_sub_title li {
+        float: left;
+        text-align: center;
+        line-height: 38px;
+        color: #333;
+        font-size: 12px; }
+        .main1 #cart_title #cart_sub_title li:nth-of-type(1) {
+          width: 412px;
+          height: 38px; }
+        .main1 #cart_title #cart_sub_title li:nth-of-type(2) {
+          width: 300px;
+          height: 38px; }
+        .main1 #cart_title #cart_sub_title li:nth-of-type(3) {
+          width: 100px;
+          height: 38px; }
+        .main1 #cart_title #cart_sub_title li:nth-of-type(4) {
+          width: 145px;
+          height: 38px; }
+  .main1 #cart_list {
+    width: 920px;
+    min-height: 200px;
+    background: red;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px; }
+    .main1 #cart_list .orders-table {
+      width: 928px;
+      height: 89px;
+      border-collapse: collapse;
+      border-spacing: 0;
+      background: #F9F9F9; }
+      .main1 #cart_list .orders-table tbody .cart_sub_list {
+        width: 928px;
+        height: 89px; }
+        .main1 #cart_list .orders-table tbody .cart_sub_list td {
+          font-size: 14px; }
+          .main1 #cart_list .orders-table tbody .cart_sub_list td:nth-of-type(1) {
+            width: 30px;
+            height: 89px;
+            line-height: 89px;
+            text-align: center; }
+          .main1 #cart_list .orders-table tbody .cart_sub_list td:nth-of-type(2) {
+            width: 414px;
+            height: 89px;
+            line-height: 89px;
+            text-align: center; }
+            .main1 #cart_list .orders-table tbody .cart_sub_list td:nth-of-type(2) a {
+              text-decoration: none;
+              color: #CECECE;
+              font-size: 12px; }
+              .main1 #cart_list .orders-table tbody .cart_sub_list td:nth-of-type(2) a img {
+                width: 58px;
+                height: 74px;
+                float: left; }
+              .main1 #cart_list .orders-table tbody .cart_sub_list td:nth-of-type(2) a span {
+                margin-left: 10px;
+                display: block;
+                line-height: 0;
+                display: block;
+                float: left;
+                margin-top: 40px; }
+                .main1 #cart_list .orders-table tbody .cart_sub_list td:nth-of-type(2) a span:hover {
+                  color: #F00581; }
+          .main1 #cart_list .orders-table tbody .cart_sub_list td:nth-of-type(3) {
+            width: 260px;
+            height: 89px;
+            line-height: 89px;
+            text-align: center;
+            font-weight: 700; }
+            .main1 #cart_list .orders-table tbody .cart_sub_list td:nth-of-type(3) span {
+              font-weight: 100; }
+          .main1 #cart_list .orders-table tbody .cart_sub_list td:nth-of-type(4) {
+            width: 97px;
+            height: 89px;
+            line-height: 89px;
+            text-align: center; }
+          .main1 #cart_list .orders-table tbody .cart_sub_list td:nth-of-type(5) {
+            width: 127px;
+            height: 89px;
+            line-height: 89px;
+            text-align: center; }
