@@ -241,7 +241,8 @@ input, a {
         width: 338px;
         height: 34px;
         border: 1px solid #333;
-        border-radius: 5px; }
+        border-radius: 5px;
+        position: relative; }
         #header #top_logo_wrap #top_logo #search #txt {
           margin-left: 10px;
           border: none;
@@ -257,6 +258,16 @@ input, a {
             height: 17px;
             background: url(../images/logo.png) no-repeat left top;
             background-position: -72px -208px; }
+        #header #top_logo_wrap #top_logo #search .search_list {
+          z-index: 7777777777777;
+          position: absolute;
+          margin-top: 3px;
+          width: 291px; }
+          #header #top_logo_wrap #top_logo #search .search_list li {
+            background: #fff;
+            color: #333; }
+            #header #top_logo_wrap #top_logo #search .search_list li:hover {
+              background: #FA4B9B; }
       #header #top_logo_wrap #top_logo #shop {
         width: 106px;
         height: 32px;

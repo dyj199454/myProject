@@ -3,16 +3,13 @@
 		var goodsid = location.search.split("=")[1];
 		$.getJSON("http://datainfo.duapp.com/shopdata/getGoods.php?callback=?",{goodsID:goodsid},function(data){
 						console.log(data);
-					var str = `<div id="midpic">
-					<img src="${data[0].goodsListImg}"/>
-					<div id="zoom"></div>
+				var str = `<div id="midpic">
+				<img src="${data[0].goodsListImg}"/>
+				<div id="zoom"></div>
 				</div>
 				<ul id="smallpic">
 					<li><img src="${data[0].goodsListImg}"></li>
-					<li><img src="../images/main_1fpic5.jpg"></li>
-					<li><img src="../images/main_1fpic6.jpg"></li>
-					<li><img src="../images/main_1fpic7.jpg"></li>
-					<li><img src="../images/main_1fpic8.jpg"></li>
+					
 				</ul>
 				<div id="bigpic">
 					<img src="${data[0].goodsListImg}" alt="" />
@@ -39,44 +36,32 @@
 					<div class="youhui">
 						<span>优惠</span>
 						<span>满减</span>
-						<span>大牌日【每满200减20·不封顶】</span>
+						<span>每满200减20·不封顶</span>
 					</div>
 					<div class="lingquan">
-						<span>领券</span>
-						<span>满6减5券</span>
+						<span>买赠</span>
+						<span>买此产品送一,数量有限</span>
 					</div>
 				</div>
 				<br /><br />
 				<div class="num">
 					<p>数量</p>
 					<div>
-						<input type="button"  value="-" />
-						<strong>1</strong>
-						<input type="button" value="+" />
+						<input type="button" class="btn1" value="-" />
+						<strong class="numshu">1</strong>
+						<input type="button" class="btn2" value="+" />
 					</div>
 				</div>
-				<p class="add">加入购物车</p>
+				<p data-id="${data[0].goodsID}" class="add">加入购物车</p>
 				<a class="chakan">查看购物车</a>`;
-				//console.log(str2);
 				$(".main-right").html(str2);
 				
 				
-						$(".add").click(function(){
-							$.get("http://datainfo.duapp.com/shopdata/updatecar.php",{userID:$.cookie("username"),goodsID:data[0].goodsID,},function(data){
-								console.log(data);
-								if(data==0){
-									alert("添加失败");
-								}
-								if(data == 1){
-									alert("添加成功");
-								}
-							})
-						})
 						$(".chakan").click(function(){
 							window.location.href="cart.html";
 						})
 						
-						/*原生生成放大镜*/
+	/******************原生生成放大镜****************************/
 	var oZoomBox = document.getElementById("main-left");
 			var oMidArea = document.getElementById("midpic");
 			var oZoom = document.getElementById("zoom");
@@ -119,15 +104,40 @@
 				oBigImg.style.top = -oZoom.offsetTop/oMidArea.offsetHeight*oBigImg.offsetHeight + "px";
 				
 			}
-						
-						
+				/*********************加减数量**********************/	
+				
+				   var num=$(".numshu").text();
+					$(".btn1").click(function(){
+						num--;
+						$(".numshu").text(num);
+						if(num<1){
+							alert("请添加商品数量");
+						}
 					});
 					
+					$(".btn2").click(function(){
+						num++;
+						$(".numshu").text(num);
+					});
+					
+					
+					$(".add").click(function(){
+							var goodsID = $(this).attr("data-id");
+							console.log(goodsID)
+							$.get("http://datainfo.duapp.com/shopdata/updatecar.php",{userID:$.cookie("username"),goodsID:goodsID,number:num},function(data){
+								console.log(data);
+								if(data==0){
+									alert("添加失败");
+								}
+								if(data == 1){
+									alert("添加成功");
+								}
+							})
+				})
 	
-	
+		});
 	})
 	
 })(jQuery);
-
 
 

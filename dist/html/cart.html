@@ -160,10 +160,13 @@
 						<div id="search">
 							<input type="text" id="txt" placeholder="大家都在搜：连衣裙"/>
 							<a id="i_search" href="#"><span class="i_cion"></span></a>
+							<ul class="search_list" style="border-right:1px solid #eee;border-left:1px solid #eee;border-bottom:1px solid #eee;display: none;">
+								
+							</ul>
 						</div>
 						<div id="shop">
 							<span class="icn_bag"></span>
-							<span id="cartTxt">购物袋</span>
+							<span id="cartTxt"><a href="cart.html">购物袋</a></span>
 							<span id="cartCount"><span id="count" style="color:#fff;" >0</span></span>
 							<div class="shop_btn"><a href="html/login.html" style="color:#f00581;">马上登录</a>查看购物袋</div>
 						</div>
@@ -224,6 +227,7 @@
 				<div id="cart_title">
 					<ul id="cart_sub_title">
 						<li><input type="checkbox" id="checkAll" />全选</li>
+						<!--<li>折扣</li>-->
 						<li>单价</li>
 						<li>数量</li>
 						<li>操作</li>
@@ -233,10 +237,11 @@
 					<table class="orders-table">
 						<tbody>
 							<tr class="cart_sub_list">
-								<td><input type="checkbox" id="checkAll" /></td>
+								<td><input type="checkbox"  /></td>
 								<td>
 									<a href=""><img src=""/></a>
 									<a href=""><span>短裤</span></a>
+									<span>6折</span>
 								</td>
 								<td><span>￥</span>179</td>
 								<td>1</td>
@@ -340,6 +345,7 @@
 			</div>		
 		</div>
 		<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</body>
 </html>

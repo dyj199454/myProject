@@ -28,23 +28,27 @@ input, a {
 #banner-wrap {
   padding-top: 20px;
   background: url(../images/banner4.jpg) no-repeat top/cover;
-  height: 412px; }
+  height: 412px;
+  z-index: 11; }
 
 .banner {
   width: 976px;
   height: 380px;
   position: relative;
-  margin: 0 auto; }
+  margin: 0 auto;
+  z-index: 111; }
   .banner .banner_pic {
     width: 976px;
     height: 380px;
     overflow: hidden;
+    z-index: 111;
     border: 10px solid #fff; }
     .banner .banner_pic ul li {
       padding: 5px;
       width: 976px;
       height: 340px;
-      position: relative; }
+      position: relative;
+      z-index: 66; }
   .banner .nav {
     background: #fff;
     position: absolute;

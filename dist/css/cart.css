@@ -26,11 +26,11 @@ input, a {
   outline: none; }
 
 .main1 {
-  width: 960px;
+  width: 972px;
   margin: 0 auto; }
   .main1 #cart_title {
     margin: 20px 0 0;
-    width: 960px;
+    width: 972px;
     height: 38px;
     line-height: 38px;
     background: #F9F9F9;
@@ -45,7 +45,7 @@ input, a {
         color: #333;
         font-size: 12px; }
         .main1 #cart_title #cart_sub_title li:nth-of-type(1) {
-          width: 412px;
+          width: 380px;
           height: 38px; }
         .main1 #cart_title #cart_sub_title li:nth-of-type(2) {
           width: 300px;
@@ -57,66 +57,74 @@ input, a {
           width: 145px;
           height: 38px; }
   .main1 #cart_list {
-    width: 920px;
-    min-height: 200px;
-    background: red;
+    width: 960px;
+    min-height: 180px;
     border-left: 1px solid #e0e0e0;
     border-right: 1px solid #e0e0e0;
     border-bottom: 1px solid #e0e0e0;
-    padding: 20px; }
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px; }
     .main1 #cart_list .orders-table {
+      margin-top: 20px;
       width: 928px;
       height: 89px;
       border-collapse: collapse;
       border-spacing: 0;
       background: #F9F9F9; }
-      .main1 #cart_list .orders-table tbody .cart_sub_list {
-        width: 928px;
-        height: 89px; }
-        .main1 #cart_list .orders-table tbody .cart_sub_list td {
-          font-size: 14px; }
-          .main1 #cart_list .orders-table tbody .cart_sub_list td:nth-of-type(1) {
-            width: 30px;
-            height: 89px;
-            line-height: 89px;
-            text-align: center; }
-          .main1 #cart_list .orders-table tbody .cart_sub_list td:nth-of-type(2) {
-            width: 414px;
-            height: 89px;
-            line-height: 89px;
-            text-align: center; }
-            .main1 #cart_list .orders-table tbody .cart_sub_list td:nth-of-type(2) a {
-              text-decoration: none;
-              color: #CECECE;
-              font-size: 12px; }
-              .main1 #cart_list .orders-table tbody .cart_sub_list td:nth-of-type(2) a img {
-                width: 58px;
-                height: 74px;
-                float: left; }
-              .main1 #cart_list .orders-table tbody .cart_sub_list td:nth-of-type(2) a span {
-                margin-left: 10px;
+      .main1 #cart_list .orders-table tbody {
+        margin-top: 20px; }
+        .main1 #cart_list .orders-table tbody .cart_sub_list {
+          width: 928px;
+          height: 89px; }
+          .main1 #cart_list .orders-table tbody .cart_sub_list td {
+            font-size: 14px; }
+            .main1 #cart_list .orders-table tbody .cart_sub_list td:nth-of-type(1) {
+              width: 30px;
+              height: 89px;
+              line-height: 89px;
+              text-align: center; }
+            .main1 #cart_list .orders-table tbody .cart_sub_list td:nth-of-type(2) {
+              width: 250px;
+              height: 89px;
+              font-size: 14px; }
+              .main1 #cart_list .orders-table tbody .cart_sub_list td:nth-of-type(2) > span {
                 display: block;
-                line-height: 0;
-                display: block;
-                float: left;
-                margin-top: 40px; }
-                .main1 #cart_list .orders-table tbody .cart_sub_list td:nth-of-type(2) a span:hover {
+                height: 30px;
+                width: 40px;
+                margin-left: 80px;
+                padding-top: 10px; }
+                .main1 #cart_list .orders-table tbody .cart_sub_list td:nth-of-type(2) > span:hover {
                   color: #F00581; }
-          .main1 #cart_list .orders-table tbody .cart_sub_list td:nth-of-type(3) {
-            width: 260px;
-            height: 89px;
-            line-height: 89px;
-            text-align: center;
-            font-weight: 700; }
-            .main1 #cart_list .orders-table tbody .cart_sub_list td:nth-of-type(3) span {
-              font-weight: 100; }
-          .main1 #cart_list .orders-table tbody .cart_sub_list td:nth-of-type(4) {
-            width: 97px;
-            height: 89px;
-            line-height: 89px;
-            text-align: center; }
-          .main1 #cart_list .orders-table tbody .cart_sub_list td:nth-of-type(5) {
-            width: 127px;
-            height: 89px;
-            line-height: 89px;
-            text-align: center; }
+              .main1 #cart_list .orders-table tbody .cart_sub_list td:nth-of-type(2) a {
+                text-decoration: none;
+                color: #CECECE;
+                font-size: 12px; }
+                .main1 #cart_list .orders-table tbody .cart_sub_list td:nth-of-type(2) a img {
+                  width: 58px;
+                  height: 74px;
+                  float: left; }
+                .main1 #cart_list .orders-table tbody .cart_sub_list td:nth-of-type(2) a:nth-of-type(2) span {
+                  display: block;
+                  width: 150px;
+                  height: 30px;
+                  line-height: 20px;
+                  margin-left: 80px; }
+            .main1 #cart_list .orders-table tbody .cart_sub_list td:nth-of-type(3) {
+              width: 100px;
+              height: 89px;
+              line-height: 89px;
+              text-align: center;
+              font-weight: 700; }
+              .main1 #cart_list .orders-table tbody .cart_sub_list td:nth-of-type(3) span {
+                font-weight: 100; }
+            .main1 #cart_list .orders-table tbody .cart_sub_list td:nth-of-type(4) {
+              width: 97px;
+              height: 89px;
+              line-height: 89px;
+              text-align: center; }
+            .main1 #cart_list .orders-table tbody .cart_sub_list td:nth-of-type(5) {
+              width: 100px;
+              height: 89px;
+              line-height: 89px;
+              text-align: center; }

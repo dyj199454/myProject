@@ -109,11 +109,27 @@
 						})
 						$("#main_nav_list").html(str);
 						$(".main_title_nav_right").html(str);
-					})
+				})
 				
-			/*获取商品的列表*/
-			
-			
+				/********************搜索框的实现*************************/
+							$("#txt")[0].oninput=function(){
+								
+								var keyVal= $("#txt").val();
+								if(keyVal!=""){
+									 $.getJSON("https://suggest.taobao.com/sug?code=utf-8&q="+keyVal+"&_ksTS=1528371119980_296&callback=?&area=c2c&bucketid=7",function(data){
+												var str="";
+										for(let i=0;i<data.result.length;i++){
+													str+="<li>"+data.result[i][0]+"</li>";
+													$(".search_list").html(str);
+											}
+										
+										})
+										$(".search_list").css("display","block");
+										}else{
+											  $(".search_list").css("display","none")
+										}
+								
+							}
 			})
    
    
