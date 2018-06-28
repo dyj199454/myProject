@@ -120,18 +120,54 @@
 						$(".numshu").text(num);
 					});
 					
-					
+					/******************添加购物车时，商品数量的累加******************************/
 					$(".add").click(function(){
 							var goodsID = $(this).attr("data-id");
 							console.log(goodsID)
-							$.get("http://datainfo.duapp.com/shopdata/updatecar.php",{userID:$.cookie("username"),goodsID:goodsID,number:num},function(data){
-								console.log(data);
-								if(data==0){
-									alert("添加失败");
+							$.getJSON("http://datainfo.duapp.com/shopdata/getCar.php?callback=?",{userID:$.cookie("username")},function(data){
+								console.log(data)
+								if(data!=0){
+									for(var i=0;i<data.length;i++){
+									if(data[i].goodsID==goodsID){
+										 num = Number(data[i].number)+ Number(num)
+										 console.log(num)
+										$.get("http://datainfo.duapp.com/shopdata/updatecar.php",{userID:$.cookie("username"),goodsID:goodsID,number:num},function(data){
+										console.log(data);
+										if(data==0){
+											alert("添加失败");
+										}
+										if(data == 1){
+											alert("添加成功");
+										}
+									})
+									}else{
+										$.get("http://datainfo.duapp.com/shopdata/updatecar.php",{userID:$.cookie("username"),goodsID:goodsID,number:num},function(data){
+										
+										if(data==0){
+											alert("添加失败");
+										}
+										if(data == 1){
+											alert("添加成功");
+										}
+									})
+									}
 								}
-								if(data == 1){
-									alert("添加成功");
+								}else{
+									console.log(222)
+									$.get("http://datainfo.duapp.com/shopdata/updatecar.php",{userID:$.cookie("username"),goodsID:goodsID,number:num},function(data){
+										
+										if(data==0){
+											alert("添加失败");
+										}
+										if(data == 1){
+											alert("添加成功");
+										}
+									})
 								}
+								
+									
+									
+								
 							})
 				})
 	
